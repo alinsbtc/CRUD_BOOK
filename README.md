@@ -16,6 +16,11 @@
    ```bash
    git clone https://github.com/alinsbtc/CRUD_BOOK.git
    cd book-management
+## Create and activate a virtual environment:
+   1. Create and activate a virtual environment:
+       ```bash
+       python -m venv venv
+       
 ## Setup Instructions
 1. **Install required packages**
     ```bash
