@@ -29,6 +29,7 @@
 7. Run the development server
     ```bash
    python manage.py runserver
+http://127.0.0.1:8000/
 # Built With
 - **Django** - The web framework used
 - **Bootstrap** - For responsive styling
