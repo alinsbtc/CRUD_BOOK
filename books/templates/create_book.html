@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Book</title>
+    <!-- Link to Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="mt-5">
+      <div class="container">
+        <h1 class="mb-5">Add Book</h1>
+
+        <!-- Display success and error messages -->
+        {% if messages %}
+        <div>
+          {% for message in messages %}
+          <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <form method="post" action="/create/" enctype="multipart/form-data">
+          {% csrf_token %}
+
+          <!-- Title -->
+          <div class="mb-3">
+            <label for="title" class="form-label">Title: </label>
+            <input type="text" class="form-control" name="title" required />
+          </div>
+
+          <!-- Author -->
+          <div class="mb-3">
+            <label for="author" class="form-label">Author: </label>
+            <input type="text" class="form-control" name="author" required />
+          </div>
+
+          <!-- Published Date -->
+          <div class="mb-3">
+            <label for="published_date" class="form-label"
+              >Published Date:</label
+            >
+            <input
+              type="date"
+              class="form-control"
+              name="published_date"
+              required
+            />
+          </div>
+
+          <!-- ISBN -->
+          <div class="mb-3">
+            <label for="isbn" class="form-label">ISBN:</label>
+            <input type="text" class="form-control" name="isbn" required />
+          </div>
+
+          <!-- Price -->
+          <div class="mb-3">
+            <label for="price" class="form-label">Price:</label>
+            <input
+              type="number"
+              step="0.01"
+              class="form-control"
+              name="price"
+              required
+            />
+          </div>
+
+          <!-- Submit Button -->
+          <a href="/" class="btn btn-danger mr-1">Back</a>
+          <button type="submit" class="btn btn-info">Add Book</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts for Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

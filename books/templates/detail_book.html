@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Deletion</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>detail Book</h1>
+      <div class="card mt-3">
+        <div class="card-body">
+          <h2>{{ book.title }}</h2>
+          <p><strong>Author:</strong> {{ book.author }}</p>
+          <p><strong>Published Date:</strong> {{ book.published_date }}</p>
+          <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+          <p><strong>Price:</strong> {{ book.price }}</p>
+
+          <!-- Delete Confirmation Form -->
+          <a href="/" class="btn btn-secondary">Back</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
