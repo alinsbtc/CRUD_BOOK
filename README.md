@@ -18,10 +18,8 @@
    cd book-management
 ## Create and activate a virtual environment:
 ## Setup Instructions
-```bash
-   python -m venv venv
-   - **Windows**: venv\Scripts\activate
-   - **Mac/Linux**: source venv/bin/activate
+   ```bash
+      python -m venv venv
 1. **Install required packages**
     ```bash
     pip install -r requirements.txt
