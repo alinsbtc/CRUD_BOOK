@@ -19,13 +19,13 @@
 ## Setup Instructions
 
 2. Install required packages
-   - pip install -r requirements.txt
+   pip install -r requirements.txt
 3. Set up the database
    python manage.py migrate
 4. Create a superuser
    python manage.py createsuperuser
 5. Run the development server
-python manage.py runserver
+   python manage.py runserver
 # Built With
 - **Django** - The web framework used
 - **Bootstrap** - For responsive styling
