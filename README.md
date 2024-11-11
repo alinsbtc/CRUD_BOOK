@@ -19,7 +19,7 @@
 ## Setup Instructions
 
 2. Install required packages
-   pip install -r requirements.txt
+   - pip install -r requirements.txt
 3. Set up the database
    python manage.py migrate
 4. Create a superuser
