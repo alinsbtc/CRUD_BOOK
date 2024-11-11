@@ -16,20 +16,25 @@
    ```bash
    git clone https://github.com/alinsbtc/CRUD_BOOK.git
    cd book-management
+## Create and activate a virtual environment:
 ## Setup Instructions
+```bash
+   python -m venv venv
+   - **Windows**: venv\Scripts\activate
+   - **Mac/Linux**: source venv/bin/activate
 1. **Install required packages**
     ```bash
     pip install -r requirements.txt
-3. Set up the database
+2. Set up the database
     ```bash
    python manage.py migrate
-5. Create a superuser
+3. Create a superuser
     ```bash
    python manage.py createsuperuser
-7. Run the development server
+4. Run the development server
     ```bash
    python manage.py runserver
-http://127.0.0.1:8000/
+Now, you can access the application at http://127.0.0.1:8000/.
 # Built With
 - **Django** - The web framework used
 - **Bootstrap** - For responsive styling
