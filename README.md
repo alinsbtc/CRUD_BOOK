@@ -17,9 +17,9 @@
    git clone https://github.com/alinsbtc/CRUD_BOOK.git
    cd book-management
 ## Create and activate a virtual environment:
-## Setup Instructions
    ```bash
       python -m venv venv
+## Setup Instructions
 1. **Install required packages**
     ```bash
     pip install -r requirements.txt
