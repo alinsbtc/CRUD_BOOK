@@ -18,12 +18,16 @@
    cd book-management
 ## Setup Instructions
 1. **Install required packages**
+    ```bash
     pip install -r requirements.txt
-2. Set up the database
+3. Set up the database
+    ```bash
    python manage.py migrate
-3. Create a superuser
+5. Create a superuser
+    ```bash
    python manage.py createsuperuser
-4. Run the development server
+7. Run the development server
+    ```bash
    python manage.py runserver
 # Built With
 - **Django** - The web framework used
